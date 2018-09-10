@@ -1,0 +1,175 @@
+<!Document html>
+<html>
+<head>
+	<meta http-equiv="Content-type" content="text/html charset=utf-8" />
+	<link rel="stylesheet" type="text/css" href="css/mainstyle.css"/>
+	<title> безМятежные </title>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+	<script type="text/javascript">
+		 $(document).ready(function(){
+			$("#block_block_limks").on("click","a", function (event) {
+				event.preventDefault();
+				var id  = $(this).attr('href'),
+					top = $(id).offset().top;
+				$('body,html').animate({scrollTop: top}, 1500);
+			});
+		});
+	</script>
+</head>
+
+<body>
+
+	<aside> 
+		<div id="aside_label"> 
+			<span id="first_label"> без </span>
+			<span id="second_label"> мятежные </span>
+		</div>
+		<div id="block_block_limks">
+			<div id="block_links">
+				<a href="#about" class="links"> О нас </a>
+			</div>
+			<div id="block_links">
+				<a href="#trips" class="links"> Путешествия </a>
+			</div>
+			<div id="block_links">
+				<a href="#pictures" class="links"> Галерея </a>
+			</div>
+		</div>
+	</aside>
+	
+	<article> 
+		<div id="background_img_block">
+			<img id="background_img" src="web/resources/catam.jpg"/>
+		</div>
+		
+		<div id="about" name="about">
+			<div id="about_head">
+				<span id="about_first_label"> без </span>
+				<span id="about_second_label"> мятежные </span>
+				<div id="about_history_block">
+					<span id="about_history"> история </span>
+				</div>
+				
+				<div id="about_text_block">
+					<p id="about_text"> Эта история началась двенадцать лет назад. Анна Родионова, бухгалтер из Нижнего Новгорода, переехала с детьми в Буэнос-Айрес, где вышла замуж, развелась, работала официанткой, таксистом, танцевала танго на улице. Счастливая жизнь закончилась, когда ее дочь с подругой на улице зарезал ветеринар Мариано Бонетто — сумасшедший женоненавистник. Теперь Анна живет в прежде самом любимом городе только ради одного — наказания для всех, кто виновен в смерти ее ребенка.
+					</p>
+					<p id="about_text"> Эта история началась двенадцать лет назад. Анна Родионова, бухгалтер из Нижнего Новгорода, переехала с детьми в Буэнос-Айрес, где вышла замуж, развелась, работала официанткой, таксистом, танцевала танго на улице. Счастливая жизнь закончилась, когда ее дочь с подругой на улице зарезал ветеринар Мариано Бонетто — сумасшедший женоненавистник. Теперь Анна живет в прежде самом любимом городе только ради одного — наказания для всех, кто виновен в смерти ее ребенка.
+					</p>
+					<p id="about_text"> Эта история началась двенадцать лет назад. Анна Родионова, бухгалтер из Нижнего Новгорода, переехала с детьми в Буэнос-Айрес, где вышла замуж, развелась, работала официанткой, таксистом, танцевала танго на улице. Счастливая жизнь закончилась, когда ее дочь с подругой на улице зарезал ветеринар Мариано Бонетто — сумасшедший женоненавистник. Теперь Анна живет в прежде самом любимом городе только ради одного — наказания для всех, кто виновен в смерти ее ребенка.
+					</p>					
+				</div>
+			</div>
+		</div>
+		
+		<div id="trips" name="trips">
+			<div id="trips_head">
+				<span id="trips_first_label"> без </span>
+				<span id="trips_second_label"> мятежные </span>
+				<div id="trips_trips_block">
+					<span id="trips_trips"> путешествия </span>
+				</div>
+				
+				<div id="trips_text_block">
+					
+					<div id="trips_hist">
+						<div id="trips_photo">
+							<img src="web/resources/pic_small_1.jpg"  width="250" alt="Урал, март 2018">
+						</div>
+						<div id="trips_descr">
+							<div id="trips_descr_head">
+								Урал, март 2018
+							</div>
+							<div id="trips_descr_body">
+								<p id="trips_text"> Небольшая поездка в замечательное озеро...</p>
+								<a href="/trips/his_01_01.html" id="hist_link"> подробнее...</a>
+							</div>
+						</div>
+					</div>
+					
+					<div id="trips_hist">
+						<div id="trips_photo">
+							<img src="web/resources/pic_small_2.jpg"  width="250" onclick="this.classList.toggle('big')">
+						</div>
+						<div id="trips_descr">
+							<div id="trips_descr_head">
+								Урал, март 2018
+							</div>
+							<div id="trips_descr_body">
+								<p id="trips_text"> Небольшая поездка в замечательное озеро...</p>
+								<a href="/trips/his_01_01.html" id="hist_link"> подробнее...</a>
+							</div>
+						</div>
+					</div>
+					
+					<div id="trips_hist">
+						<div id="trips_photo">
+							<img src="web/resources/pic_small_3.jpg"  width="250" onclick="this.classList.toggle('big')">
+						</div>
+						<div id="trips_descr">
+							<div id="trips_descr_head">
+								Урал, март 2018
+							</div>
+							<div id="trips_descr_body">
+								<p id="trips_text"> Небольшая поездка в замечательное озеро...</p>
+								<a href="/trips/his_01_01.html" id="hist_link"> подробнее...</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div id="pictures">
+				<span id="pictures_first_label"> без </span>
+				<span id="pictures_second_label"> мятежные </span>
+				<div id="pictures_trips_block">
+					<span id="pictures_pictures"> галерея </span>
+				</div>
+
+				<div id="pictures_block">
+					<table id="pictures_table">
+						<tr>
+							<td>
+								<img id="exact_picture" src="web/resources/pic_small_3.jpg"  width="250" onclick="this.classList.toggle('big')">
+							</td>
+							<td>
+								<img src="web/resources/pic_small_3.jpg"  width="250" onclick="this.classList.toggle('big')">
+							</td>
+							<td>
+								<img src="web/resources/pic_small_3.jpg"  width="250" onclick="this.classList.toggle('big')">
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<img src="web/resources/pic_small_3.jpg"  width="250" onclick="this.classList.toggle('big')">
+							</td>
+							<td>
+								<img src="web/resources/pic_small_3.jpg"  width="250" onclick="this.classList.toggle('big')">
+							</td>
+							<td>
+								<img src="web/resources/pic_small_3.jpg"  width="250" onclick="this.classList.toggle('big')">
+							</td>
+						</tr>
+					</table>
+					
+				</div>
+		</div>
+		
+	</article>
+	
+	
+	
+	<footer> 
+		<div id="footer_block">
+				<span id="footer_first_label"> без </span>
+				<span id="footer_second_label"> мятежные </span>
+				
+					<span id="footer_history"> контакты : </span>
+					<span id="mailto"> example@gmail.com </span>
+				
+		</div>
+	 </footer>
+	
+</body>
+
+</html>
